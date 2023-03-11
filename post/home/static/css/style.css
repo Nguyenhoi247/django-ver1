@@ -1,0 +1,132 @@
+body {
+    background-color: var(--white-b);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-page {
+    height: 400px;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    max-height: 300px;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 12px;
+    border: 1px solid #1d1618;
+    border-radius: 8px;
+    text-emphasis: none;
+
+}
+.form input:focus {
+    outline-color: #769ac9;
+}
+.form button {
+    text-transform: uppercase;
+    padding: 15px;
+    margin-bottom: 40px;
+    transition: all 0.3 ease;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800;
+
+}
+ /* login */
+.form .login-form{
+    display: block;
+}
+
+.login-form .btn-login {
+    width: 100%;
+    background-color: #4185de;
+}
+.login-form .btn-login:hover {
+    background-color: #2178eb;
+}
+
+
+.login-form .acc-make,
+.form .btn-up {
+    background-color: #57e957;
+}
+.login-form .acc-make:hover,
+.form .btn-up:hover{
+    background-color: #22da22;
+}
+.login-form .hem .acc-make {
+    margin: 38px 0;
+}
+
+.login-form .hem {
+    border-top: 1px solid #dadde1;
+}
+
+.login-fot {
+    display: flex;
+    justify-content: center;
+}
+
+.login-fot a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-fot a:hover {
+    color: #4185de;
+}
+
+/* login up */
+
+.form .register-form {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-siup .i-close{
+    text-align: right;
+    font-size: 25px;
+    margin: -42px -27px;
+}
+
+.form .form-siup{
+    text-align: center;
+    margin-top: -35px;
+ }
+.form .text-name {
+    display: flex;
+    justify-content: space-between;
+}
+.form .text-name-fl{
+    width: 49%; 
+}
+.form .btn-up {
+    line-height: 0.6rem;
+    width: 200px;
+    height: 40px;
+   
+}
+
+
+/* facebook */
+
+
+

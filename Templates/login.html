@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- login-logup -->
+    <div class="login-page">
+        <div class="form">
+            <form action="{% url 'login' %}" method="POST" onsubmit="login()" class="login-form">
+                {% csrf_token %}
+                <input type="text" class="login-name" required placeholder="メールまたは電話番号" name='email'>
+                <input type="password" class="login-password"  placeholder="パスワード" name='password'>
+                <button type="submit" class="btn-login">ログイン</button>
+                <div class="hem">
+                    <button type="button" onclick="location.href='{% url 'register' %}';" class="acc-make">新しいアカウントを作成する</button>
+                    
+                </div>
+            </form>
+        </div>
+        <div class="login-fot">
+            <p><a href="{% url 'register' %}">ページを作成</a> 有名人、バンド、またはビジネスの</p>
+        </div>
+    </div> 
+    {% comment %} <script src="./js/"></script> {% endcomment %}
+
+</body>
+
+</html>
